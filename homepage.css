@@ -1,0 +1,726 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#main{
+    width: 100%;   
+    overflow-x: hidden;
+}
+
+#workingarea{
+    margin: 0 auto;
+    width: 85%;
+}
+#nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    
+}
+#burger{
+    display: none;
+}
+#n1{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    
+}
+#n1 i{
+    rotate: -45deg;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+#n1 h3{
+    /* font-size: 1.3em; */
+    font-weight: 600;
+    color: #1B1F2D;
+    cursor: pointer;
+}
+#n2{
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-right: 25%; */
+}
+#n2 h4{
+    font-weight: 400;
+}
+#n2 h4:hover{
+    color: crimson;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#n3{
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+#n3 i{
+    font-size: 1.2em;
+}
+#n3 i:hover{
+    scale: 1.5;
+    transition: all 400ms ease; 
+    cursor: pointer;
+}
+#n3 img{
+    width: 4.6rem;
+    /* height: 5rem; */
+}
+#n3 img:hover{
+    scale: 1.3;
+    cursor: pointer;
+    transition: all 400ms ease; 
+}
+
+#part1{
+    width: 100%;
+    height: 35rem;
+    margin-top: 1rem;
+    background-image:linear-gradient(rgba(0, 0, 255, 0.042), rgba(0, 85, 255, 0.053)), url("assets/anders-jilden-cYrMQA7a3Wc-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    position: relative;
+}
+#part1 h1{
+    color: #fff;
+    text-align: center;
+}
+#part1 h3{
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+#forms{
+    width: 83%;
+    padding: 0.6rem 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    transform: translate(0,-2rem);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.086);
+    
+}
+form{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    
+}
+form #loc{
+    font-size: 0.9vw;
+    padding: 0.8vw 2.8vw;
+    
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    border: none;
+    
+}
+form #date{
+    font-size: 0.9vw;
+    padding: 0.8vw 0.8vw;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    border: none;
+}
+form #dateout{
+    font-size: 0.9vw;
+    padding: 0.8vw 0.8vw;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    border: none;
+}
+form #Guests{
+    font-size: 0.9vw;
+    padding: 0.8vw 1vw;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    border: none;;
+}
+form > div{
+    position: relative;
+    flex-basis: 18%;
+    
+}
+form > div > input{
+    width: 100%;
+}
+form > div > i{
+    font-size: 1.3vw;
+    position: absolute;
+    top: 0.7vw;
+
+    left: 0.3vw;
+}
+form > div:last-child{
+    flex-basis: unset;
+}
+form >div:first-child{
+    flex-basis: 25%;
+}
+#button{
+    color: #fff;
+    flex-basis: 18%;
+    font-size: 0.9vw;
+    padding: 0.8vw 2.5vw;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #2F80ED;
+    border: 1px solid;
+    
+}
+#button:hover{
+    background-color: crimson;
+    transition: all 500ms ease;
+    cursor: pointer;
+
+}
+
+#warn{
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    background-color: #FCEFCA;
+    border-radius: 8px;
+    align-items: center;
+    gap: 1.7rem;
+    margin-top: 1.8rem;
+}
+#mark{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+#para{
+    display: flex;
+    
+}
+#para h4{
+    font-weight: 400;
+}
+#para a{
+    text-decoration: none;
+    color:#2F80ED;
+}
+#title{
+    margin-top: 3rem;
+    
+}
+#t2{
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+
+#places{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+#places img:hover{
+    scale: 1.1;
+    transition: all 500ms ease;
+}
+#places h3:hover{
+    color: crimson;
+    cursor: pointer;
+}
+#aust,#jap,#zea,#greece{
+    width: 23%;
+}
+#aust img{
+    width: 100%;
+    aspect-ratio: 19/14;
+    border-radius: 10px;
+    filter: saturate(1.2);
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#jap img{
+    width: 100%;
+    aspect-ratio: 19/14;
+    border-radius: 10px;
+    filter: saturate(2);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+#zea img{
+    width: 100%;
+    aspect-ratio: 19/14;
+    border-radius: 10px;
+    filter: saturate(2);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+#greece img{
+    width: 100%;
+    aspect-ratio: 19/14;
+    border-radius: 10px;
+    filter: saturate(2);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+#aust h4{
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+#jap h4{
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+#zea h4{
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+#greece h4{
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+#head2{
+    font-size: 1.7rem;
+    margin-top: 4rem;
+    font-weight: 600;
+}
+
+#trip{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#trip div:hover{
+    scale: 1.2;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+#hotel{
+    width: 32.3%;
+    height: 17rem;
+    background-image:linear-gradient(rgba(12, 12, 29, 0.095), rgba(4, 20, 49, 0.468)), url('assets/top5hotel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    filter: saturate(1);
+    gap: 0.8rem;
+    
+}
+#hotel h3{
+    padding-right: 2rem;
+    margin-left: 1rem;
+}
+#hotel p{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+#vegan{
+    width: 32.3%;
+    height: 17rem;
+    background-image:linear-gradient(rgba(88, 69, 54, 0.404), rgba(32, 26, 2, 0.689)), url('assets/vegan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    gap: 0.8rem;
+}
+#vegan h3{
+    
+    margin-left: 1rem;
+}
+#vegan p{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+
+#ctime{
+    width: 32.3%;
+    height: 17rem;
+    background-image:linear-gradient(rgba(14, 57, 25, 0.1), rgba(5, 60, 34, 0.468)), url('assets/destination.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    gap: 0.8rem;
+}
+#ctime h3{
+    
+    margin-left: 1rem;
+}
+#ctime p{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+#popular{
+    margin-top: 4rem;
+    
+}
+
+#hotels{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+#hotels > div{
+    width: 23%;
+}
+#hotels img:hover{
+    scale: 1.1;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+#hotels h3:hover{
+    color: crimson;
+    cursor: pointer;
+}
+#hotels > div > img{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    filter: saturate(2);
+    margin-bottom: 1rem;
+}
+#hotels > div > h4{
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+
+
+#mobile{
+    margin-top: 5rem;
+    width: 100%;
+    height: 18rem;
+    background-image: url('assets/download.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+#write{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    line-height: 2.5rem;
+    margin-left: 5rem;
+    letter-spacing: 0;
+    word-spacing: 0;
+    margin-top: 2rem;
+    position: relative;
+}
+#write h1{
+    font-weight: 400;
+} 
+#write button{
+    position: absolute;
+    transform: translate(0,6rem);
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #2F80ED;
+    border: none;
+}
+#write button:hover{
+    background-color: crimson;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+#finalh{
+    margin-top: 5.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+#finalp{
+    margin-top: 1rem;
+    text-align: center;
+    color: #5088d1;
+}
+
+
+footer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer > div{
+    flex-basis: 20%;
+    
+}
+footer p{
+    color: #000000c7;
+    font-weight: 300;
+    font-size: 0.94rem;
+    margin-bottom: 0.6rem;
+}
+footer h3{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+#f1 h3 i{
+    rotate: -35deg;
+    cursor: pointer;
+}
+#f1  p{
+    cursor: pointer;
+    /* margin-left: 1.6rem; */
+    
+}
+#f1 h3{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+#seemore{
+    color: rgb(16, 185, 185);
+}
+footer > div > p:hover{
+    color: crimson;
+    cursor: pointer;
+}
+
+#copy{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #EBEBEB;
+    margin-top: 7rem;
+    overflow: hidden;
+}
+#copy p{
+    margin-right: 11rem;
+    color: #5d5b5b;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width:1510px) {
+    form{
+        gap: 1.6vw;
+        padding: 1vw 0vw;
+    }
+}
+@media screen and (max-width:1041px){
+    #nav{
+        gap: 1rem;
+    }
+    #n1{
+        display: flex;
+        align-items: center;
+        gap: 0.3em;
+    }
+    #n1 h3{
+        
+        font-weight: 600;
+
+    }
+    
+    #forms{
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        transform: unset;
+        margin-top: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.086);
+        
+    }
+    form{
+        width: 100%;
+        gap: 1.6vw;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        padding: 3vh;
+        
+    }
+    form > div > i{
+        font-size: 1rem;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    
+    
+form #loc{
+    
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8vw 2.8vw;
+    padding-left: 2rem;
+    margin: 0;
+}
+form #date{
+    
+    font-size: 1rem;
+    padding: 0.8vw 1vw;
+    
+}
+form #dateout{
+    
+    font-size: 0.9rem;
+    padding: 0.8vw 0.8vw;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    border: none;
+}
+form #Guests{
+    
+    font-size: 1rem;
+    padding: 0.8vw 1vw;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    border: none;;
+}
+form > div {
+    flex-basis: 45%;
+}
+form > div input{
+    width: 100%;
+}
+form > div:first-child{
+    flex-basis: 100%;
+}
+#button{
+    flex-basis: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.8vw 2.5vw;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #2F80ED;
+    border: none;
+    
+}
+form a{
+    flex-basis: 45%;
+}
+#places{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+#aust,#jap,#zea,#greece{
+    width: 47%;
+    margin-bottom: 1rem;
+}
+
+#hotels > div{
+    width: 47%;
+}
+footer{
+    justify-content: unset;
+}
+footer > div{
+    flex-basis: 33%;   
+    
+}
+}
+
+@media screen and (max-width:799px){
+    #n2{
+        display: none;
+    }
+    #burger{
+        display: unset;
+    }
+}
+
+@media screen and (max-width:550px){
+    form > div{
+        flex-basis: 100%;
+        width: 100%;
+        
+    }
+    #workingarea{
+        width:95%;
+    }
+    form > div:first-child input{
+        flex-basis: unset;
+        text-align: center;
+    }
+    form #loc{
+        font-size: 4vw;
+        
+        
+    }
+    form #date{
+        font-size: 4vw;
+       
+    }
+    form #dateout{
+        font-size: 4vw;
+        
+    }
+    form #Guests{
+        font-size: 4vw;
+        
+    }
+    #button{
+        font-size: 4vw;
+    }
+    #trip > div {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+    }
+    footer > div{
+        flex-basis: 50%;   
+        
+    }
+
+}

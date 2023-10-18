@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+#main{
+    width: 100%;   
+    height: 100vh;
+}
+#nav{
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 1.5rem;
+}
+#n1{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    
+}
+#n1 i{
+    rotate: -45deg;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+#n1 h3{
+    /* font-size: 1.3em; */
+    font-weight: 600;
+    color: #1B1F2D;
+    cursor: pointer;
+}
+#login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#regis{
+    width: unset;
+    height: 35rem;
+}
+#regis h1{
+    text-align: center;
+    font-size: 1.7rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+#name{
+    display: flex;
+    flex-direction: column;
+}
+#name h4{
+    font-size: 0.9rem;
+    color: rgb(35, 35, 35);
+}
+#name input{
+    background-color: #F2F2F2;
+    height: 2.7rem;
+    margin-top: 0.3rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#pass{
+    display: flex;
+    flex-direction: column;
+}
+#pass h4{
+    font-size: 0.9rem;
+    color: rgb(35, 35, 35);
+}
+#pass input{
+    background-color: #F2F2F2;
+    height: 2.7rem;
+    margin-top: 0.3rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+#checkbox{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    white-space: none;
+    margin-top: 1.4rem;
+}
+#checkbox input{
+    width: 1.1rem; 
+    height: 1.1rem; 
+    border-radius: 7px;
+}
+#ch1{
+    display: flex;
+    gap: 0.5rem;
+}
+#checkbox p{
+    font-size: 0.9rem;
+}
+#but{
+    width: 100%;
+}
+#but button{
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: #2F80ED;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+#but button:hover{
+    background-color: crimson;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+#parag {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+#parag:before, #parag:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.186);
+    margin: auto;
+}
+#parag:before {
+    margin-right: 10px
+}
+#parag:after {
+    margin-left: 10px
+}
+#google{
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.33);
+}
+#google:hover{
+    background-color: crimson;
+    cursor: pointer;
+    transition: all 400ms ease;
+    color: #fff;
+}
+#fb{
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: #475993;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: #fff;
+}
+#fb:hover{
+    background-color: rgb(0, 123, 255);
+    cursor: pointer;
+    transition: all 400ms ease;
+    color: #fff;
+}
+#final{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem;
+}
+@media screen and (max-width:410px) {
+    #regis{
+        width: 90%;
+    }
+}

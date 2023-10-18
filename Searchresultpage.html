@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Searchresultpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Search result page</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="hero">
+            <div id="nav">
+                <div id="n1">
+                    <i class="fa-solid fa-plane" style="color: #fff;"></i>
+                    <a>
+                        <h3>my Dream Place</h3>
+                    </a>
+                </div>
+                <div id="n2">
+                    <h4>Home</h4>
+                    <h4>Discover</h4>
+                    <h4>Activities</h4>
+                    <h4>About</h4>
+                    <h4>Contact</h4>
+                </div>
+                <div id="n3">
+                    <i class="fa-solid fa-bell" style="color: #fff;"></i>
+                    <img src="assets/Capture-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div id="forms">
+                <form action="">
+                    <div><i id="ltion" class='bx bx-location-plus bx-tada'></i><input type="" id="loc" name="location"
+                            id="location" placeholder="Melbourne"></div>
+                    <div><i id="indate" class="fa-regular fa-calendar-days" style="color: #898989;"></i><input
+                            type="text" id="date" placeholder="March 18,2022"></div>
+                    <div><i id="odate" class="fa-solid fa-calendar-days" style="color: #898989;"></i><input type="text"
+                            id="dateout" placeholder="March 20,2022"></div>
+                    <div><i id="guest" class="fa-solid fa-user" style="color: #898989;"></i><input type="text"
+                            id="Guests" placeholder="       2 adults, 1 room"></div>
+                    <div><a href="#"><button id="button">Search</button></a></div>
+
+                </form>
+            </div>
+        </div>
+        <div id="workingarea">
+            <div id="big1">
+                <div id="form1">
+                    <label for="">
+                        <h4>Search by property name</h4>
+                    </label>
+                    <div id="beach"><i class="fa-solid fa-magnifying-glass" style="color: #2e2e2e;"></i><input
+                            type="text" placeholder="e.g. Beach westpalm">
+                    </div>
+                </div>
+                <h3 id="h3">Filter by</h3>
+                <div id="container2">
+                    <div id="chead">
+                        <h3>Your budget per day</h3>
+                    </div>
+                    <div class="form" action="">
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="first">
+                            <label for="first">$ 0 - $ 200</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="sec">
+                            <label for="sec">$ 200 - $ 500</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="third">
+                            <label for="third">$ 500 - $ 1000</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="fourth">
+                            <label for="fourth">$ 1000 - $ 2000</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="fifth">
+                            <label for="fifth">$ 2000 - $ 5000</label>
+                        </p>
+
+                        <div id="toggle">
+                            <label for="">Set your own budget</label>
+                            <i class="fa-solid fa-toggle-off" style="color: #585656;"></i>
+                        </div>
+                    </div class="form">
+                </div>
+
+                <div id="rate">
+                    <div id="rating">
+                        <h3>Rating</h3>
+                    </div>
+                    <div id="star">
+                        <p>Show only ratings more than</p>
+                        <ul>
+                            <li id="l1">1 <i class="fa-solid fa-star" style="color: #f2994a;"></i></li>
+                            <li>2 <i class="fa-solid fa-star" style="color: #f2994a;"></i></li>
+                            <li>3 <i class="fa-solid fa-star" style="color: #f2994a;"></i></li>
+                            <li>4 <i class="fa-solid fa-star" style="color: #f2994a;"></i></li>
+                            <li id="l2">5 <i class="fa-solid fa-star" style="color: #f2994a;"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="container3">
+                    <div id="chead1">
+                        <h3>Popular Filters</h3>
+                    </div>
+                    <div class="form" action="">
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="first1">
+                            <label for="first1" style="font-size: 0.9rem;">Free cancellation</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="sec1">
+                            <label for="sec1" style="font-size: 0.9rem;">Spa</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="third1">
+                            <label for="third1" style="font-size: 0.9rem;">Beach front</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="fourth1">
+                            <label for="fourth1" style="font-size: 0.9rem;">Hot tub/jacuzzi</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="fifth1">
+                            <label for="fifth1" style="font-size: 0.9rem;">Book without credit card</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="sixth">
+                            <label for="sixth" style="font-size: 0.9rem;">No prepayment</label>
+                        </p>
+                    </div>
+                </div>
+                <div id="container4">
+                    <div id="chead2">
+                        <h3>Activities</h3>
+                    </div>
+                    <div class="form" action="">
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="first2">
+                            <label for="first2" style="font-size: 0.9rem;">Fishing</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="sec2">
+                            <label for="sec2" style="font-size: 0.9rem;">Hiking</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="third2">
+                            <label for="third2" style="font-size: 0.9rem;">Beach</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="fourth2">
+                            <label for="fourth2" style="font-size: 0.9rem;">Cycle</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="fifth2">
+                            <label for="fifth2" style="font-size: 0.9rem;">Sauna</label>
+                        </p>
+                        <p id="check">
+                            <input type="checkbox" name="visits" id="sixth1">
+                            <label for="sixth1" style="font-size: 0.9rem;">Night lights</label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="big2">
+                <h2 style="font-weight: 600; color: #000000ea;">Melbourne : 2,582 search results found</h2>
+                <div id="content1">
+                    <ul style="list-style: none; cursor: pointer;">
+                        <li
+                            style="border-right: 1px solid rgb(0, 128, 255); color: #2F80ED; font-weight: 600; background-color: #2f81ed14;">
+                            Our top picks</li>
+                        <li style="border-right: 1px solid rgb(0, 128, 255);">Hotel and apartments</li>
+                        <li style="border-right: 1px solid rgb(0, 128, 255);">Residence</li>
+                        <li style="border-right: 1px solid rgb(0, 128, 255);">Resort</li>
+                        <li>Shared space</li>
+                    </ul>
+                    <div id="sort" style="cursor: pointer;">
+                        <div id="s1">
+                            <p>Sort by</p>
+                            <p>Recommended</p>
+                        </div>
+                        <div id="arr">
+                            <i class="fa-solid fa-angle-down" style="color: #242424;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="results">
+                    <div class="r1">
+                        <div class="img common-img">
+                        </div>
+                        <div class="txt">
+                            <h3>Lakeside Motel Warefront</h3>
+                            <div class="rev">
+                                <div id="rev1">
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star-half" style="color: #f2994a;"></i>
+                                </div>
+                                <div id="rev2">
+                                    <p>4.5 (1200 Reviews)</p>
+                                </div>
+                            </div>
+                            <p>Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late checkout.Gym included.
+                                Flexible cancellation applies</p>
+                            <div id="bt"><button>See availibility</button></div>
+                        </div>
+                        <div class="price">
+                            <div id="p1">
+                                <p>Book now and recieve 15% off</p>
+                            </div>
+                            <div id="p2">
+                                <p>5% off </p>
+                                <p>1 room 2 days</p>
+                                <div class="cut">
+                                    <del>$150</del>
+                                    <h2>$130</h2>
+                                </div>
+                                <p>Include taxes and fees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r1">
+                        <div class="img2 common-img">
+                        </div>
+                        <div class="txt">
+                            <h3>Julia Dens Resort</h3>
+                            <div class="rev">
+                                <div id="rev1">
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star-half" style="color: #f2994a;"></i>
+                                </div>
+                                <div id="rev2">
+                                    <p>4.5 (1200 Reviews)</p>
+                                </div>
+                            </div>
+                            <p>Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late checkout.Gym included.
+                                Flexible cancellation applies</p>
+                            <div id="bt"><button>See availibility</button></div>
+                        </div>
+                        <div class="price">
+                            <div></div>
+                            <div id="edited">
+                                <p>1 room 2 days</p>
+                                <h2>$240</h2>
+                                <p>Include taxes and fees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r1">
+                        <div class="img3 common-img">
+                        </div>
+                        <div class="txt">
+                            <h3>Aghnim Sceptor Hotel</h3>
+                            <div class="rev">
+                                <div id="rev1">
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star-half" style="color: #f2994a;"></i>
+                                </div>
+                                <div id="rev2">
+                                    <p>4.5 (1200 Reviews)</p>
+                                </div>
+                            </div>
+                            <p>Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late checkout.Gym included.
+                                Flexible cancellation applies</p>
+                            <div id="bt"><button>See availibility</button></div>
+                        </div>
+                        <div class="price">
+                            <div id="p1_2">
+                                <p>Recieve 30% discount on a restaurant</p>
+                            </div>
+                            <div id="edited">
+                                <p>1 room 2 days</p>
+                                <h2 >$300</h2>
+                                <p>Include taxes and fees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r1">
+                        <div class="img4 common-img">
+                        </div>
+                        <div class="txt">
+                            <h3>Marineford hotel</h3>
+                            <div class="rev">
+                                <div id="rev1">
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star-half" style="color: #f2994a;"></i>
+                                </div>
+                                <div id="rev2">
+                                    <p>4.5 (1200 Reviews)</p>
+                                </div>
+                            </div>
+                            <p>Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late checkout.Gym included.
+                                Flexible cancellation applies</p>
+                            <div id="bt"><button>See availibility</button></div>
+                        </div>
+                        <div class="price">
+                            <div></div>
+                            <div id="edited">
+                                <p>1 room 2 days</p>
+                                <h2>$310</h2>
+                                <p>Include taxes and fees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r1">
+                        <div class="img5 common-img">
+                        </div>
+                        <div class="txt">
+                            <h3>Shanghai Open House</h3>
+                            <div class="rev">
+                                <div id="rev1">
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star-half" style="color: #f2994a;"></i>
+                                </div>
+                                <div id="rev2">
+                                    <p>4.5 (1200 Reviews)</p>
+                                </div>
+                            </div>
+                            <p>Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late checkout.Gym included.
+                                Flexible cancellation applies</p>
+                            <div id="bt"><button>See availibility</button></div>
+                        </div>
+                        <div class="price">
+                            <div></div>
+                            <div id="edited">
+                                <p>1 room 2 days</p>
+                                <h2>$140</h2>
+                                <p>Include taxes and fees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r1">
+                        <div class="img6 common-img">
+                        </div>
+                        <div class="txt">
+                            <h3>Ocean Waved Resort</h3>
+                            <div class="rev">
+                                <div id="rev1">
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star-half" style="color: #f2994a;"></i>
+                                </div>
+                                <div id="rev2">
+                                    <p>4.5 (1200 Reviews)</p>
+                                </div>
+                            </div>
+                            <p>Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late checkout.Gym included.
+                                Flexible cancellation applies</p>
+                            <div id="bt"><button>See availibility</button></div>
+                        </div>
+                        <div class="price">
+                            <div></div>
+                            <div id="edited">
+                                <p>1 room 2 days</p>
+                                <h2>$310</h2>
+                                <p>Include taxes and fees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r1">
+                        <div class="img7 common-img">
+                        </div>
+                        <div class="txt">
+                            <h3>Miami City frontier</h3>
+                            <div class="rev">
+                                <div id="rev1">
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star-half" style="color: #f2994a;"></i>
+                                </div>
+                                <div id="rev2">
+                                    <p>4.5 (1200 Reviews)</p>
+                                </div>
+                            </div>
+                            <p>Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late checkout.Gym included.
+                                Flexible cancellation applies</p>
+                            <div id="bt"><button>See availibility</button></div>
+                        </div>
+                        <div class="price">
+                            <div id="p1_2">
+                                <p>Receive 30% discount on a restaurant</p>
+                            </div>
+                            <div id="p2">
+                                <p>15% off </p>
+                                <p>1 room 2 days</p>
+                                <div class="cut">
+                                    <del>$200</del>
+                                    <h2 >$190</h2>
+                                </div>
+                                
+                                <p>Include taxes and fees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r1">
+                        <div class="img8 common-img">
+                        </div>
+                        <div class="txt">
+                            <h3>Lakeside Motel Warefront</h3>
+                            <div class="rev">
+                                <div id="rev1">
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star" style="color: #f2994a;"></i>
+                                    <i class="fa-solid fa-star-half" style="color: #f2994a;"></i>
+                                </div>
+                                <div id="rev2">
+                                    <p>4.5 (1200 Reviews)</p>
+                                </div>
+                            </div>
+                            <p>Live a little and celbrate with champagne</p>
+                            <p>Reats include a glass of French champagne, parking and a late checkout.Gym included.
+                                Flexible cancellation applies</p>
+                            <div id="bt"><button>See availibility</button></div>
+                        </div>
+                        <div class="price">
+                            <div id="p1_2">
+                                <p>Book now and recieve 15% off</p>
+                            </div>
+                            <div id="p2">
+                                <p>5% off </p>
+                                <p>1 room 2 days</p>
+                                <div class="cut">
+                                    <del>$320</del>
+                                    <h2>$300</h2>
+                                </div>
+    
+                                <p>Include taxes and fees</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="more"><button>
+                        <h4>Load more results</h4>
+                    </button></div>
+            </div>
+        </div>
+        <div id="warn">
+            <i id="mark" class="fa-solid fa-triangle-exclamation" style="color: #737373;"></i>
+            <div id="para">
+                <h4>Check the latest COVID-19 restrictions before you travel.</h4><a href="#">
+                    <h4>Learn more</h4>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div id="f1">
+                <h3><i class="fa-solid fa-plane" style="color: #2f80ed;"></i> my Dream Place</h3>
+                <p>Your next goto companion for <br>travel</p>
+            </div>
+            <div id="f2">
+                <h3>Company</h3>
+                <p>About</p>
+                <p>Jobs</p>
+                <p>Newsroom</p>
+                <p>Advertising</p>
+                <p>Contact us</p>
+            </div>
+            <div id="f3">
+                <h3>Explore</h3>
+                <p>Australia</p>
+                <p>New Zealand</p>
+                <p>United States of America (USA)</p>
+                <p>Greece</p>
+                <p>Maldives</p>
+                <p>Singapore</p>
+                <p id="seemore">See more</p>
+            </div>
+            <div id="f4">
+                <h3>Terms and Policy</h3>
+                <p>Privacy policy</p>
+                <p>Terms of use</p>
+                <p>Acessibility</p>
+                <p>Reward system policy</p>
+            </div>
+            <div id="f5">
+                <h3>Help</h3>
+                <p>Support</p>
+                <p>Cancel your booking</p>
+                <p>Use Coupon</p>
+                <p>Refund Policies</p>
+                <p>International Travel Documents</p>
+            </div>
+        </footer>
+        <div id="copy">
+            <p><i class="fa-regular fa-copyright" style="color: #5d5b5b;"></i> my Dream Place 2022</p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
